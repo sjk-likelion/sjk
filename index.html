@@ -191,6 +191,7 @@
   .tier-header.jongno { background: #edf7f2; color: #1a6644; }
   .tier-header.junggu { background: #fde8d8; color: #7a2800; }
   .tier-header.yongsan { background: #fff4ea; color: #7a3a00; }
+  .tier-header.gongdeok { background: #f0ebff; color: #4a2a8a; }
   .tier-row { display: flex; align-items: center; gap: 10px; padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 13px; }
   .tier-row:last-child { border-bottom: none; }
   .tier-rank { font-size: 11px; font-weight: 700; width: 18px; color: var(--text3); flex-shrink: 0; }
@@ -236,7 +237,7 @@
       <div class="meta-item"><span class="meta-label">퇴거 예정일</span><span class="meta-val">2027년 1월 31일</span></div>
       <div class="meta-item"><span class="meta-label">희망 전용면적</span><span class="meta-val">300 ~ 350평 (±50평 확장 검토)</span></div>
       <div class="meta-item"><span class="meta-label">희망 권역</span><span class="meta-val">종로 · 동대문 · 공덕 · 충정로 · 서대문</span></div>
-      <div class="meta-item"><span class="meta-label">자료 기준일</span><span class="meta-val">2026년 4월</span></div>
+      <div class="meta-item"><span class="meta-label">자료 기준일</span><span class="meta-val">2026년 4월 16일</span></div>
     </div>
   </div>
 
@@ -410,6 +411,29 @@
           <td><span class="num">103,849만</span></td><td><span class="num">7,637만</span></td><td><span class="num">3,372만</span></td>
           <td><span class="num" style="color:var(--green);font-weight:700">11,010만</span></td>
           <td>종각역 4분</td><td><span class="chip chip-orange">준공예정</span></td><td>신축, 25층</td>
+        </tr>
+        <tr style="background:var(--bg3)">
+          <td colspan="12" style="padding:6px 12px; font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.05em;">▸ 공덕 권역</td>
+        </tr>
+        <tr class="priority">
+          <td><span class="rank-badge rank-1">①</span></td>
+          <td class="bldg-name">LG마포빌딩</td>
+          <td><span class="chip chip-purple">공덕</span></td>
+          <td><span class="num">326평</span></td>
+          <td>4층 전체 (단층)</td>
+          <td><span class="num">25,624만</span></td><td><span class="num">3,299만</span></td><td><span class="num">2,338만</span></td>
+          <td><span class="num" style="color:var(--green);font-weight:700">5,637만</span></td>
+          <td>공덕역 5분</td><td><span class="chip chip-green">즉시입주</span></td><td>1987년, RF없음, 유료주차불가</td>
+        </tr>
+        <tr class="priority">
+          <td><span class="rank-badge rank-1">①</span></td>
+          <td class="bldg-name">마포T타운</td>
+          <td><span class="chip chip-purple">공덕</span></td>
+          <td><span class="num">376평</span></td>
+          <td>11·12층 (2개층)</td>
+          <td><span class="num">52,500만</span></td><td><span class="num">5,138만</span></td><td><span class="num">3,216만</span></td>
+          <td><span class="num">8,354만</span></td>
+          <td>공덕역 4분</td><td><span class="chip chip-orange">협의필요</span></td><td>전대차 조건, 만기 2029.09</td>
         </tr>
         <tr style="background:var(--bg3)">
           <td colspan="12" style="padding:6px 12px; font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.05em;">▸ 예비 후보</td>
@@ -680,10 +704,15 @@
         <tr class="priority"><td class="bldg-name">서울시티타워</td><td><span class="chip chip-red">중구</span></td><td style="font-size:11px">후암로 110</td><td><span class="num">404.57평</span></td><td>단층</td><td><span class="num">110,637만</span></td><td><span class="num">8,922만</span></td><td><span class="num">4,119만</span></td><td><span class="num">13,042만</span></td><td style="font-size:12px">서울역 2분 · 회현역 8분</td><td style="font-size:12px">2002 신축</td><td><span class="chip chip-green">즉시</span></td></tr>
         <tr class="priority"><td class="bldg-name">미래에셋센터원</td><td><span class="chip chip-red">중구</span></td><td style="font-size:11px">을지로5길 26</td><td><span class="num">284.4평</span></td><td>단층</td><td><span class="num">98,545만</span></td><td><span class="num">9,693만</span></td><td><span class="num">3,637만</span></td><td><span class="num">13,330만</span></td><td style="font-size:12px">을지로입구역 3분 · 종각역 4분</td><td style="font-size:12px">2010 신축</td><td><span class="chip chip-green">즉시</span></td></tr>
         <tr class="priority"><td class="bldg-name">이을타워 <span style="font-size:10px;font-weight:400;">(신축 예정)</span></td><td><span class="chip chip-red">중구</span></td><td style="font-size:11px">충무로9길 17</td><td><span class="num">410.51평</span></td><td>단층</td><td><span class="num">141,947만</span></td><td><span class="num">11,415만</span></td><td><span class="num">4,775만</span></td><td><span class="num" style="color:var(--accent)">16,190만</span></td><td style="font-size:12px">을지로3가역 3분</td><td style="font-size:12px">26년 9월 신축예정</td><td><span class="chip chip-orange">준공후</span></td></tr>
+        <tr style="background:var(--bg3)">
+          <td colspan="12" style="padding:6px 12px; font-size:11px; color:var(--text3); font-weight:600; letter-spacing:0.05em;">▸ 공덕 권역</td>
+        </tr>
+        <tr class="priority"><td class="bldg-name">LG마포빌딩</td><td><span class="chip chip-purple">공덕</span></td><td style="font-size:11px">마포대로 155</td><td><span class="num">326평</span></td><td>4층 전체 (단층)</td><td><span class="num">25,624만</span></td><td><span class="num">3,299만</span></td><td><span class="num">2,338만</span></td><td><span class="num" style="color:var(--green);font-weight:700">5,637만</span></td><td style="font-size:12px">공덕역 5분</td><td style="font-size:12px">1987년</td><td><span class="chip chip-green">즉시</span></td></tr>
+        <tr class="priority"><td class="bldg-name">마포T타운</td><td><span class="chip chip-purple">공덕</span></td><td style="font-size:11px">마포대로 144</td><td><span class="num">376평</span></td><td>11·12층 (2개층)</td><td><span class="num">52,500만</span></td><td><span class="num">5,138만</span></td><td><span class="num">3,216만</span></td><td><span class="num">8,354만</span></td><td style="font-size:12px">공덕역 4분</td><td style="font-size:12px">1995년</td><td><span class="chip chip-orange">협의</span></td></tr>
       </tbody>
     </table>
   </div>
-  <p class="note" style="margin-top:10px;">* 월지출은 인센티브(RF·FO) 반영 5년 가정 평균 기준 &nbsp;|&nbsp; 중구 및 일부 종로 빌딩 월지출이 현 D타워(RF반영 14,496만원)보다 낮음에 유의 &nbsp;|&nbsp; G1 Seoul·그랑서울·스테이트타워남산은 300평 분할 협의 기준</p>
+  <p class="note" style="margin-top:10px;">* 월지출은 인센티브(RF·FO) 반영 5년 가정 평균 기준 &nbsp;|&nbsp; 중구 및 일부 종로 빌딩 월지출이 현 D타워(RF반영 14,496만원)보다 낮음 &nbsp;|&nbsp; G1 Seoul·그랑서울·스테이트타워남산은 300평 분할 협의 기준</p>
 
 
 
@@ -785,6 +814,22 @@
       </div>
     </div>
 
+    <div class="tier-card">
+      <div class="tier-header gongdeok">공덕 · 마포 권역</div>
+      <div class="tier-row">
+        <div class="tier-rank">1</div>
+        <div class="tier-name">LG마포빌딩</div>
+        <div class="tier-note">326평 · 공덕역 5분 · 단층</div>
+        <div class="tier-cost">5,637만</div>
+      </div>
+      <div class="tier-row">
+        <div class="tier-rank">2</div>
+        <div class="tier-name">마포T타운</div>
+        <div class="tier-note">376평 · 공덕역 4분 · 전대차</div>
+        <div class="tier-cost">8,354만</div>
+      </div>
+    </div>
+
   </div>
 
   <div class="divider"></div>
@@ -796,7 +841,7 @@
   <div class="section">
     <div class="section-header">
       <div class="section-title">우선 협상 후보</div>
-      <span class="section-badge badge-priority">우선 협상 · 9개 후보</span>
+      <span class="section-badge badge-priority">우선 협상 · 11개 후보</span>
     </div>
 
     <div class="card-grid">
@@ -947,6 +992,82 @@
           </div>
           <div class="card-summary">
             <strong>GA 의견:</strong> 인센티브(RF 4개월 + FO 2개월)가 검토군 내 최우수. 실질 월지출 4,057만원으로 비용도 좋은 편. 단층 구성, 주차도 넉넉. 면적 400평은 목표 상단을 50평 초과하나 조직 확장 가능성을 열어두면 유리. 다만 판매시설 분류라 전형적 본사 오피스 이미지와 결이 다소 다를 수 있음.
+          </div>
+        </div>
+      </div>
+
+      <!-- LG마포빌딩 -->
+      <div class="card priority">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-rank p">①</div>
+            <div>
+              <div class="card-name">LG마포빌딩</div>
+              <div class="card-addr">서울 마포구 마포대로 155 (공덕동 275) · PRD10181573</div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="chip chip-purple">공덕 권역</span>
+            <span class="chip chip-green">즉시입주</span>
+            <span class="chip chip-gray">RF 없음</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="cost-box">
+            <div class="cost-item"><div class="cost-label">보증금</div><div class="cost-value green">25,624<span class="cost-unit">만원</span></div></div>
+            <div class="cost-item"><div class="cost-label">임대료</div><div class="cost-value green">3,299<span class="cost-unit">만원/월</span></div></div>
+            <div class="cost-item"><div class="cost-label">관리비</div><div class="cost-value">2,338<span class="cost-unit">만원/월</span></div></div>
+          </div>
+          <div class="info-grid">
+            <div class="info-row"><span class="info-key">위치</span><span class="info-val">4층 전체 (지상 17층 / 지하 4층)</span></div>
+            <div class="info-row"><span class="info-key">전용면적</span><span class="info-val"><span class="highlight">326평</span> (임대 641평, 전용률 50.9%)</span></div>
+            <div class="info-row"><span class="info-key">준공</span><span class="info-val">1987년</span></div>
+            <div class="info-row"><span class="info-key">월 고정비</span><span class="info-val mono"><span class="good">5,637만원/월</span> (인센티브 없음)</span></div>
+            <div class="info-row"><span class="info-key">지하철</span><span class="info-val">5·6호선·경의중앙·공항철도 <strong>공덕역 5분</strong></span></div>
+            <div class="info-row"><span class="info-key">주차</span><span class="info-val">70평당 1대 (무료 8대) · 유료 주차 불가</span></div>
+            <div class="info-row"><span class="info-key">인테리어</span><span class="info-val">포함 (협의 조건)</span></div>
+            <div class="info-row"><span class="info-key">입주시기</span><span class="info-val"><strong class="good">즉시입주 가능</strong></span></div>
+          </div>
+          <div class="card-summary">
+            <strong>GA 의견:</strong> 검토군 내 보증금·월지출 모두 최저 수준으로 비용 메리트가 가장 큼. 공덕역 4개 노선(5·6호선·경의중앙선·공항철도) 접근성 우수. 즉시입주 가능. 다만 1987년 노후 건물이며 RF·FO 인센티브 없음, 유료주차도 불가능해 주차 수요 많을 경우 제약. 비용 최우선 시 공덕권 1순위.
+          </div>
+        </div>
+      </div>
+
+      <!-- 마포T타운 -->
+      <div class="card priority">
+        <div class="card-header">
+          <div class="card-title-group">
+            <div class="card-rank p">①</div>
+            <div>
+              <div class="card-name">마포T타운</div>
+              <div class="card-addr">서울 마포구 마포대로 144 (공덕동 252-5) · PRD10182627</div>
+            </div>
+          </div>
+          <div class="card-tags">
+            <span class="chip chip-purple">공덕 권역</span>
+            <span class="chip chip-orange">전대차 조건</span>
+            <span class="chip chip-gray">2개층</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="cost-box">
+            <div class="cost-item"><div class="cost-label">보증금</div><div class="cost-value">52,500<span class="cost-unit">만원</span></div></div>
+            <div class="cost-item"><div class="cost-label">임대료</div><div class="cost-value">5,138<span class="cost-unit">만원/월</span></div></div>
+            <div class="cost-item"><div class="cost-label">관리비</div><div class="cost-value">3,216<span class="cost-unit">만원/월</span></div></div>
+          </div>
+          <div class="info-grid">
+            <div class="info-row"><span class="info-key">위치</span><span class="info-val">11층 일부 + 12층 전체 (지상 18층 / 지하 6층)</span></div>
+            <div class="info-row"><span class="info-key">전용면적</span><span class="info-val"><span class="highlight">376평</span> (11층 125평 + 12층 251평 합산)</span></div>
+            <div class="info-row"><span class="info-key">준공</span><span class="info-val">1995년</span></div>
+            <div class="info-row"><span class="info-key">월 고정비</span><span class="info-val mono">8,354만원/월 (인센티브 없음)</span></div>
+            <div class="info-row"><span class="info-key">지하철</span><span class="info-val">5·6호선·경의중앙·공항철도 <strong>공덕역 4분</strong></span></div>
+            <div class="info-row"><span class="info-key">주차</span><span class="info-val">60평당 1대 (무료 14대) · 유료 10만원/대</span></div>
+            <div class="info-row"><span class="info-key">계약 조건</span><span class="info-val"><strong>전대차 계약</strong> · 만기 2029년 9월 28일</span></div>
+            <div class="info-row"><span class="info-key">입주시기</span><span class="info-val">2026년 6월 이후</span></div>
+          </div>
+          <div class="card-summary">
+            <strong>GA 의견:</strong> 공덕역 4분으로 접근성 양호. 무료주차 14대는 검토군 내 최다 수준. 다만 <strong>전대차 계약으로 만기가 2029년 9월로 제한</strong>되어 5년 계약 시 연장 불가 리스크 존재. 
           </div>
         </div>
       </div>
@@ -1301,6 +1422,13 @@
   ══════════════════════════════════════ -->
   <h2>종합 의견</h2>
 
+  <div class="callout" style="background:#f7f6f3; border-color:#e0dfd9; margin-bottom:16px;">
+    <span class="callout-icon" style="font-size:14px; color:var(--text3)">📍</span>
+    <div class="callout-body" style="font-size:13px; color:var(--text2)">
+      <strong>동대문 권역 관련</strong> — 동묘앞역 인근(시즌빌딩·대경빌딩 등)까지는 오피스 상권이 형성되어 있어 검토 후보에 포함.
+    </div>
+  </div>
+
   <h3>순서</h3>
   <ul class="step-list">
     <li>
@@ -1321,7 +1449,7 @@
       <div class="step-num">3</div>
       <div class="step-text">
         <strong>삼풍넥서스빌딩</strong> — 도심 접근성 우선
-        <div class="reason">을지로 3·4가역 3분 최고 대중교통 접근성, 비용 4,443만원 우수. 권역이 중구로 희망 권역에서 약간 벗어나나 도심 접근성을 중시한다면 강력 대안.</div>
+        <div class="reason">을지로 3·4가역 3분 최고 대중교통 접근성, 비용 4,443만원 우수. 권역이 중구로 희망 권역에서 약간 벗어나나 도심 접근성을 중시한다면 대안.</div>
       </div>
     </li>
     <li>
@@ -1382,7 +1510,7 @@
   <div class="footer">
     ※ 평균 월지출(시즌빌딩 등)은 5년 가정 + Rent Free / Fit-out 반영치 기준입니다.<br>
     ※ 삼풍넥서스빌딩·단암타워·배재정동빌딩은 중구 후보지 기안서 시세비교표 기준입니다.<br>
-    ※ 검토일: 2026년 4월 15일
+    ※ 검토일: 2026년 4월 16일
   </div>
 
 </div>
